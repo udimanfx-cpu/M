@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tiktok-printer-game
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"

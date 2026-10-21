@@ -1,0 +1,20 @@
+PANDUAN DEPLOY DARI HP ANDROID (TANPA KOMPUTER)
+
+Paket ini disiapkan agar bisa di-deploy ke hosting Docker seperti Render menggunakan browser HP.
+Catatan: hosting gratis dapat tidur/terbatas dan tidak menjamin koneksi TikTok LIVE selalu stabil. TikTokLive adalah pustaka pihak ketiga tidak resmi; kompatibilitas dapat berubah.
+
+LANGKAH:
+1. Ekstrak ZIP di HP jika perlu.
+2. Buat akun GitHub dan buat repository baru (Public atau Private).
+3. Upload semua ISI folder tiktok_printer_game ke repository, termasuk Dockerfile dan render.yaml. Jangan upload folder pembungkus di luarnya.
+4. Buka Render.com melalui Chrome dan login.
+5. Pilih New + > Blueprint, sambungkan GitHub, lalu pilih repository yang berisi render.yaml.
+6. Ikuti petunjuk deploy. Tunggu sampai status Live dan salin alamat HTTPS yang diberikan Render.
+7. Buka alamat HTTPS itu di Chrome HP. Masukkan username publik akun TikTok yang sedang LIVE, tanpa @, lalu tekan Hubungkan.
+8. Biarkan halaman game terbuka saat LIVE. Coba fitur tes terlebih dahulu.
+
+PENTING:
+- Jangan pernah masukkan password TikTok, kode OTP, atau cookie.
+- Game hanya membaca event publik yang dapat diakses oleh pustaka pihak ketiga. Koneksi bisa gagal walau username benar.
+- Jika deploy gratis tertidur atau koneksi terputus, buka lagi situs dan sambungkan ulang.
+- Jangan anggap tombol tes sebagai bukti event TikTok asli berhasil diterima.
